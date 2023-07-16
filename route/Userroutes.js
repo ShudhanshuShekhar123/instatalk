@@ -6,6 +6,15 @@ const jwt=require("jsonwebtoken")
 
 const Post = require("../Usermodal")
 
+
+
+
+
+server.get("/home",(req,res)=>{
+    res.send("Welcome to my backend api")
+})
+
+
 server.post("/register", async (req, res) => {
 
     try {
